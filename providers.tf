@@ -9,7 +9,8 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-south-1"
+  region                   = "ap-south-1"
+  profile                  = "default"
   shared_config_files      = ["/home/kalyan/.aws/config"]
   shared_credentials_files = ["/home/kalyan/.aws/credentials"]
 }
